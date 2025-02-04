@@ -1,51 +1,55 @@
 import React from "react";
 import "./testimonials.css";
+import profileImage from "/src/assets/uppi.jpg";
+import sainikhil from "/src/assets/sainikhil.jpeg";
+import johnny from "/src/assets/jhonny.jpeg";
+import chandu from "/src/assets/chandu.jpeg";
+
+// D:\VIII SEM Major Project\Mern-Elearning-main\frontend\src\assets\uppi.jpeg
 
 const Testimonials = () => {
   const testimonialsData = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Upendar Thota",
       position: "Student",
       message:
         "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
-      image:
-        "https://th.bing.com/th?q=Current+Bachelor&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247",
-    },
+    //   image:
+    //     "https://th.bing.com/th?q=Current+Bachelor&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247",
+    image:profileImage,
+     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Sai Nikhil",
       position: "Student",
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
-      image:
-        "https://th.bing.com/th/id/OIP.GKAiW3oc2TWXVEeZAzrWOAHaJF?w=135&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      image:sainikhil,
     },
     {
       id: 3,
-      name: "John Doe",
+      name: "Chandu Podila",
       position: "Student",
       message:
         "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
-      image:
-        "https://th.bing.com/th?q=Current+Bachelor&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247",
-    },
+      image: chandu,
+        },
     {
       id: 4,
-      name: "Jane Smith",
+      name: "Jhonny",
       position: "Student",
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
-      image:
-        "https://th.bing.com/th/id/OIP.GKAiW3oc2TWXVEeZAzrWOAHaJF?w=135&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-    },
+      image: johnny,
+     },   
   ];
   return (
     <section className="testimonials">
       <h2>What our students say</h2>
-      <div className="testmonials-cards">
+        <div className="testmonials-cards">
         {testimonialsData.map((e) => (
-          <div className="testimonial-card" key={e.id}>
+           <div className="testimonial-card" key={e.id}>
             <div className="student-image">
               <img src={e.image} alt="" />
             </div>
@@ -56,7 +60,8 @@ const Testimonials = () => {
             </div>
           </div>
         ))}
-      </div>
+       </div>
+ 
     </section>
   );
 };
