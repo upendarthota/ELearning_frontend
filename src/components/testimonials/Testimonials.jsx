@@ -21,7 +21,7 @@ const Testimonials = () => {
      },
     {
       id: 2,
-      name: "Sai Nikhil",
+      name: "Sai Nikhil Marka",
       position: "Student",
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
